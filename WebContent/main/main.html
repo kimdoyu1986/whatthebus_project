@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Welcome to What the Bus!</title>
+<link type="text/css" rel="stylesheet" href="main.css" />
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div id="page">
+
+<header id="header">
+<a><img src="main_logo.jpg" id="gogo"></a>
+</header>
+
+
+	
+	<div class="menubar">
+
+	
+		<ul>
+
+			<li><a href="#">소개</a>
+				<ul>
+					<li><a href="#">사이트소개</a></li>
+					<li><a href="#">이용가이드</a></li>
+				</ul></li>
+			<li><a href="#">커뮤니티</a>
+				<ul>
+					<li><a href="#">자유게시판</a></li>
+					<li><a href="#">수요조사</a></li>
+					<li><a href="#">후기</a></li>
+				</ul></li>
+			<li><a href="#">제안</a>
+				<ul>
+					<li><a href="#">정기권제안</a></li>
+					<li><a href="#">단기권제안</a></li>
+				</ul></li>
+			<li><a href="#">예약</a>
+				<ul>
+					<li><a href="#">자유게시판</a></li>
+					<li><a href="#">수요조사</a></li>
+					<li><a href="#">후기</a></li>
+				</ul></li>
+			<li><a href="#">고객센터</a>
+				<ul>
+					<li><a href="#">Q&A</a></li>
+					<li><a href="#">분실물서비스</a></li>
+					<li><a href="#">ContactUs</a></li>
+				</ul></li>
+			<li><a href="#">공지사항</a>
+				<ul>
+					<li><a href="#">공지사항</a></li>
+					<li><a href="#">이벤트</a></li>
+				</ul></li>
+		</ul>
+	
+	</div>
+	
+
+<!-- 여기까지 메뉴 -->
+
+
+<!-- 여기부터 로그인 -->
+<aside id="left">
+	
+	<table>
+	<tr><td><input type="text" name="name" placeholder="아이디" id="id"></td></tr>
+	<tr><td><input type="password" name="pass" placeholder="비밀번호" id="pw">	</td></tr>
+	<tr><td><input type="button" value="로그인" id="login_bt"></td></tr>
+	<tr><td><input type="button" value="회원가입" id="join_bt">
+	<input type="button" value="아이디찾기" id="id_bt"><tr><td>
+	<tr><td><input type="button" value="비밀번호 찾기" id="pw_bt"><tr><td> 
+	</table>
+	
+</aside>	
+
+<!-- 여기까지 로그인 -->
+
+<aside id="right">
+<table class="right_tab">
+<tr>
+<td>
+관심리스트(찜)
+<ul>
+<li>1.일찜</li>
+<li>2.이찜</li>
+<li>3.삼찜</li>
+</ul>
+</td>
+</tr>
+
+<tr>
+<td>
+<a href="#"><img src="ad.jpg"/></a>
+</td>
+</tr>
+<tr>
+<td>
+<a href="#"><img src="ad.jpg"/></a>
+</td>
+</tr>
+
+</table>
+</aside>
+
+
+<!-- 화면 센터 -->
+	<br>
+
+	 
+     <div align="center">
+		<form method="post" name="regForm" action=" ">
+			<input type="hidden" name="check" value="" />
+			<table>
+				<tr>
+					<td id ="welcome" colspan="2" align="center">What The Bus에 오신것을 환영합니다 ! </td>
+				</tr>
+				<tr>
+					<td align="right">아이디 :&nbsp;</td>
+					<td align="left">
+					<input type="text" name="userId" value="" readonly="readonly" /> 
+					<input type="button" id = "insertcheckbt" value="중복확인" onclick="" /> <c:if test=""><br />
+							<font color="red"></font>
+							<font color="red"></font>
+						</c:if></td>
+				</tr>
+				<tr>
+					<td align="right">비밀번호 :&nbsp;</td>
+					<td align="left">
+					<input type="password" name="userPW" value="" />
+						<br /> <font color="red"></font></td>
+				</tr>
+				<tr>
+					<td align="right">비밀번호 확인 :&nbsp;</td>
+					<td align="left">
+					<input type="password" name="reUserPW" value="" /> <br /> <font color="red"></font></td>
+				</tr>
+				<tr>
+					<td align="right">이름 :&nbsp;</td>
+					<td align="left">
+					<input type="text" name="userName" value="" />
+						<br /> <font color="red"></font></td>
+				</tr>
+				<tr>
+					<td align="right">성별 : &nbsp;</td>
+					<td align="left"><input type="radio" name="gender"
+						value="male">남성 <input type="radio" name="gender"
+						value="female">여성</td>
+				</tr>
+
+
+				<tr>
+					<td align="right">전화번호 :&nbsp;</td>
+					<td align="left"><select name="phone1">
+							<option value="02">02</option>
+							<option value="010">010</option>
+							<option value="011">011</option>
+							<option value="016">016</option>
+							<option value="017">017</option>
+							<option value="018">018</option>
+							<option value="019">019</option>
+					</select>- <input type="text" name="phone2" size="5" value="" /> - <input
+						type="text" name="phone3" size="5" value="" /> <br /> <font
+						color="red"></font></td>
+				</tr>
+				<tr>
+					<td align="right">이메일 :&nbsp;</td>
+					<td align="left"><input type="text" name="email" value="" />
+						 <font color="red"></font>
+						<input type="button" id = "emailcheckbt" value="인증번호 발송" onclick="" /></td>
+						<br />
+				</tr>
+				<tr>
+				<td align="right">인증번호 입력 : &nbsp;</td>
+				<td align="left"><input type="text" name="emailcheck" value=""/>
+				<br/>
+				<tr>
+					<td align="right">우편번호 :&nbsp;</td>
+					<td align="left"><input type="text" name="zipcode" value="" />
+						<input type="button" id = "searchbt" value="찾기" onclick="" /> <br /> <font
+						color="red"></font></td>
+				</tr>
+				<tr>
+					<td align="right">주소1 :&nbsp;</td>
+					<td align="left"><input type="text" name="address1" size="50"
+						value="" /> <br /> <font color="red"></font></td>
+				</tr>
+				<tr>
+					<td align="right">주소2 :&nbsp;</td>
+					<td align="left"><input type="text" name="address2" size="30"
+						value="" /> <br /> <font color="red"></font></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="right"><input type="reset"
+						class="insertbt" value="다시입력" />&nbsp;&nbsp; <input type="submit"
+						class="insertbt" value="회원가입" /> <input type="button"
+						class="insertbt" value="취소" onclick="" /></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+     
+<!-- 화면센터 -->
+
+
+
+</div> <!-- page -->
+</body>
+
+</html>

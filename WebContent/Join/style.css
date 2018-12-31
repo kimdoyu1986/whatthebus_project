@@ -1,0 +1,35 @@
+@charset "UTF-8";
+
+body {	
+	/*
+	background-color: rgb(49, 100, 176);
+	*/ 
+	border-collapse: collapse;
+}
+td{
+	 height:40px;
+}
+
+#welcome{
+	color : #abdcf1250145145;
+	font-size : 20pt;
+	font-family : '휴먼매직체';
+	
+}
+.insertbt{
+	background-color: rgb(133, 221,243);
+	border-radius:25px;
+	height : 40px;
+}
+#searchbt{
+	background-color: rgb(133, 221,243);
+	border-radius:25px;
+}
+#insertcheckbt{
+	background-color: rgb(133, 221,243);
+	border-radius:25px;
+}
+#emailcheckbt{
+	background-color: rgb(133, 221,243);
+	border-radius:25px;
+}

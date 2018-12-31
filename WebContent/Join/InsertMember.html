@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>InsertMember</title>
+<link type="text/css" rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div align="center">
+		<form method="post" name="regForm" action=" ">
+			<input type="hidden" name="check" value="" />
+			<table>
+				<tr>
+					<td id ="welcome" colspan="2" align="center">What The Bus에 오신것을 환영합니다 ! </td>
+				</tr>
+				<tr>
+					<td align="right">아이디 :&nbsp;</td>
+					<td align="left">
+					<input type="text" name="userId" value="" readonly="readonly" /> 
+					<input type="button" id = "insertcheckbt" value="중복확인" onclick="" /> <c:if test=""><br />
+							<font color="red"></font>
+							<font color="red"></font>
+						</c:if></td>
+				</tr>
+				<tr>
+					<td align="right">비밀번호 :&nbsp;</td>
+					<td align="left">
+					<input type="password" name="userPW" value="" />
+						<br /> <font color="red"></font></td>
+				</tr>
+				<tr>
+					<td align="right">비밀번호 확인 :&nbsp;</td>
+					<td align="left">
+					<input type="password" name="reUserPW" value="" /> <br /> <font color="red"></font></td>
+				</tr>
+				<tr>
+					<td align="right">이름 :&nbsp;</td>
+					<td align="left">
+					<input type="text" name="userName" value="" />
+						<br /> <font color="red"></font></td>
+				</tr>
+				<tr>
+					<td align="right">성별 : &nbsp;</td>
+					<td align="left"><input type="radio" name="gender"
+						value="male">남성 <input type="radio" name="gender"
+						value="female">여성</td>
+				</tr>
+
+
+				<tr>
+					<td align="right">전화번호 :&nbsp;</td>
+					<td align="left"><select name="phone1">
+							<option value="02">02</option>
+							<option value="010">010</option>
+							<option value="011">011</option>
+							<option value="016">016</option>
+							<option value="017">017</option>
+							<option value="018">018</option>
+							<option value="019">019</option>
+					</select>- <input type="text" name="phone2" size="5" value="" /> - <input
+						type="text" name="phone3" size="5" value="" /> <br /> <font
+						color="red"></font></td>
+				</tr>
+				<tr>
+					<td align="right">이메일 :&nbsp;</td>
+					<td align="left"><input type="text" name="email" value="" />
+						 <font color="red"></font>
+						<input type="button" id = "emailcheckbt" value="인증번호 발송" onclick="" /></td>
+						<br />
+				</tr>
+				<tr>
+				<td align="right">인증번호 입력 : &nbsp;</td>
+				<td align="left"><input type="text" name="emailcheck" value=""/>
+				<br/>
+				<tr>
+					<td align="right">우편번호 :&nbsp;</td>
+					<td align="left"><input type="text" name="zipcode" value="" />
+						<input type="button" id = "searchbt" value="찾기" onclick="" /> <br /> <font
+						color="red"></font></td>
+				</tr>
+				<tr>
+					<td align="right">주소1 :&nbsp;</td>
+					<td align="left"><input type="text" name="address1" size="50"
+						value="" /> <br /> <font color="red"></font></td>
+				</tr>
+				<tr>
+					<td align="right">주소2 :&nbsp;</td>
+					<td align="left"><input type="text" name="address2" size="30"
+						value="" /> <br /> <font color="red"></font></td>
+				</tr>
+				<tr>
+					<td colspan="2" align="right"><input type="reset"
+						class="insertbt" value="다시입력" />&nbsp;&nbsp; <input type="submit"
+						class="insertbt" value="회원가입" /> <input type="button"
+						class="insertbt" value="취소" onclick="" /></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

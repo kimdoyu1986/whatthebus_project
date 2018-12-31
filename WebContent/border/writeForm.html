@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>글쓰기 화면</title>
+
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="./se2/js/HuskyEZCreator.js"
+	charset="utf-8"></script>
+
+</head>
+
+<body>
+	<div align="center">
+		<b>글쓰기</b>
+	</div>
+	<br />
+	<form method="post" name="writeForm" action="" onsubmit="">
+		<input type="hidden" name="num" value=""> <input type="hidden"
+			name="ref" value=""> <input type="hidden" name="step"
+			value=""> <input type="hidden" name="depth" value="">
+		<table border = "1" align="center">
+			
+			<tr>
+				<td width="100" align="center">이름</td>
+				<td width="400"><input type="text" size="12" maxlength="12"
+					name="writer" /></td>
+			</tr>
+			<tr>
+				<td width="100" align="center">이메일</td>
+				<td width="400"><input type="text" size="30" maxlength="30"
+					name="email" /></td>
+			</tr>
+			<tr>
+				<td width="100" align="center">제목</td>
+				<td width="400"><input type="text" size="50" maxlength="50"
+					name="subject" /></td>
+
+				<!-- <input type="text" size="50" maxlength="50" name="subject"
+					value="[답변]" />
+				</td>-->
+
+			</tr>
+			<tr>
+				<td width="100" align="center">내용</td>
+				<td width="800" height="200"><textarea name="ir1" id="ir1" rows="10"
+						cols="100"></textarea></td>
+			</tr>
+			<tr>
+				<td width="100" align="center">비밀번호</td>
+				<td width="400"><input type="password" size="10" maxlength="10"
+					name="pass" /></td>
+			</tr>
+			<tr>
+				<td colspan="2" align="center">
+				<input type="submit" class="writebt" value="글쓰기" />
+				<input type="reset" class="writebt" value="다시작성" /> 
+				<input type="button" class="writebt"
+					value="목록" onClick=""></td>
+			</tr>
+		</table>
+	</form>
+	<script type="text/javascript">
+	var oEditors = [];
+
+	nhn.husky.EZCreator.createInIFrame({
+
+		oAppRef : oEditors,
+
+		elPlaceHolder : "ir1",
+
+		sSkinURI : "./se2/SmartEditor2Skin.html",
+
+		
+		htParams : {
+			bUseToolbar : true,				// 툴바 사용 여부 (true:사용/ false:사용하지 않음)
+			bUseVerticalResizer : true,		// 입력창 크기 조절바 사용 여부 (true:사용/ false:사용하지 않음)
+			bUseModeChanger : true,			// 모드 탭(Editor | HTML | TEXT) 사용 여부 (true:사용/ false:사용하지 않음)
+			//aAdditionalFontList : aAdditionalFontSet,		// 추가 글꼴 목록
+		},
+		fCreator : "createSEditor2"
+
+	});
+</script>
+</body>
+</html>

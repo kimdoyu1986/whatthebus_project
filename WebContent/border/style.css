@@ -1,0 +1,29 @@
+@charset "UTF-8";
+body {	
+	border-collapse: collapse;
+}
+.writebt{
+	background-color: rgb(133, 221,243);
+	border-radius:25px;
+	height : 30px;
+}
+#writebt{
+	width:70px;
+	height:35px;
+	background-image : url("images/writebt.PNG");
+	background-repeat:no-repeat;
+	background-position:right bottom;
+	background-size: 70px 30px;
+}
+#searchbt{
+	width:70px;
+	height:30px;
+	background-image : url("images/searchbt.PNG");
+	background-repeat:no-repeat;
+	background-position:right bottom;
+	background-size: 70px 25px;
+}
+#boardhead{
+		background-color: rgb(133, 221,243);
+	
+}
